@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dança Urbana no Brasil</title>
+    <style>
+        /* Resetando o estilo padrão */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .intro, .history, .styles, .events {
+            margin-bottom: 30px;
+        }
+
+        .intro h2, .history h2, .styles h2, .events h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .intro p, .history p, .styles p, .events p {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .styles ul, .events ul {
+            list-style-type: none;
+        }
+
+        .styles li, .events li {
+            margin: 10px 0;
+        }
+
+        .footer {
+            background-color: #1e1e1e;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Dança Urbana no Brasil</h1>
+    </header>
+
+    <nav>
+        <a href="#intro">Introdução</a>
+        <a href="#history">História</a>
+        <a href="#styles">Estilos</a>
+        <a href="#events">Eventos</a>
+    </nav>
+
+    <div class="content">
+        <section id="intro" class="intro">
+            <h2>O que é a Dança Urbana?</h2>
+            <p>A dança urbana é um estilo que abrange uma variedade de movimentos de dança, muitas vezes influenciados pela cultura de rua e pela música hip-hop. No Brasil, ela se desenvolveu de maneira única, ganhando popularidade especialmente nas grandes cidades.</p>
+            <button onclick="mostrarMais('intro')">Leia mais</button>
+        </section>
+
+        <section id="history" class="history">
+            <h2>História da Dança Urbana no Brasil</h2>
+            <p>A dança urbana começou a ganhar força no Brasil nos anos 80, com influências de estilos como breakdance e hip-hop. Desde então, ela se expandiu e se diversificou, incluindo outros movimentos como o funk carioca e a dança de rua.</p>
+            <button onclick="mostrarMais('history')">Leia mais</button>
+        </section>
+
+        <section id="styles" class="styles">
+            <h2>Estilos de Dança Urbana</h2>
+            <ul>
+                <li>Breakdance (B-boying)</li>
+                <li>Locking</li>
+                <li>Popping</li>
+                <li>Hip-hop</li>
+                <li>Funk Carioca</li>
+            </ul>
+            <button onclick="mostrarMais('styles')">Leia mais</button>
+        </section>
+
+        <section id="events" class="events">
+            <h2>Principais Eventos de Dança Urbana</h2>
+            <ul>
+                <li>Campeonato Brasileiro de Hip-Hop</li>
+                <li>Battle of the Year Brasil</li>
+                <li>Funk Carioca Festival</li>
+            </ul>
+            <button onclick="mostrarMais('events')">Leia mais</button>
+        </section>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 Dança Urbana no Brasil | Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        function mostrarMais(secao) {
+            alert("Mais informações sobre " + secao + " em breve!");
+        }
+    </script>
+
+</body>
+</html>
